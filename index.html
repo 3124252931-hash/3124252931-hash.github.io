@@ -18,7 +18,7 @@ body { margin: 0; padding: 0; }
 <div id="map"></div>
 
 <script>
-mapboxgl.accessToken = '你的token';
+mapboxgl.accessToken = 'pk.eyJ1IjoiMzA5NTQ4MCIsImEiOiJjbWtjbm1ibDIwMnVkM2tzY3c1cHp0dXhhIn0.2DiIx6SBBmuVf-ldsfQr_w';
 
 const map = new mapboxgl.Map({
     container: 'map',
@@ -36,7 +36,7 @@ map.on('load', function () {
 
     map.addLayer({
         id: 'roads',
-        type: 'line',   // 👈 就是这里
+        type: 'line', 
         source: 'roads',
         paint: {
             'line-color': '#ff0000',
