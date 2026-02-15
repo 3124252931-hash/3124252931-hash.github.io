@@ -34,6 +34,15 @@ map.on('load', function () {
         data: 'glasgow_roads.geojson'
     });
 
+      map.addLayer({
+    id: 'lez-outline',
+    type: 'line',
+    source: 'lez',
+    paint: {
+      'line-color': '#08519c',
+      'line-width': 2
+    }
+  });
     map.addLayer({
         id: 'roads',
        type: 'circle', 
@@ -65,15 +74,7 @@ map.on('load', function () {
     }
   });
 
-  map.addLayer({
-    id: 'lez-outline',
-    type: 'line',
-    source: 'lez',
-    paint: {
-      'line-color': '#08519c',
-      'line-width': 2
-    }
-  });
+
 
 });
 
