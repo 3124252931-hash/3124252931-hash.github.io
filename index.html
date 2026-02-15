@@ -47,6 +47,36 @@ map.on('load', function () {
     });
 
 });
+
+    map.on('load', function () {
+
+  map.addSource('lez', {
+    type: 'geojson',
+    data: 'lez_boundary.geojson'
+  });
+
+  map.addLayer({
+    id: 'lez-fill',
+    type: 'fill',
+    source: 'lez',
+    paint: {
+      'fill-color': '#3182bd',
+      'fill-opacity': 0.2
+    }
+  });
+
+  map.addLayer({
+    id: 'lez-outline',
+    type: 'line',
+    source: 'lez',
+    paint: {
+      'line-color': '#08519c',
+      'line-width': 2
+    }
+  });
+
+});
+
 </script>
 
 
