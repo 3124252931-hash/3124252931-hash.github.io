@@ -34,7 +34,7 @@ html, body {
 #year-selector {
   position: absolute;
   left: 20px;
-  top: 100px;
+  top: 150px;
   z-index: 9999;
 
   display: flex;
